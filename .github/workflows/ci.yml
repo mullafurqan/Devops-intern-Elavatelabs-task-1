@@ -27,7 +27,9 @@ jobs:
       run: npm test || echo "No tests found"
 
     - name: Build Docker image
-      run: docker build -t nodejs-ci-cd-demo .
+      run: docker build -t nodejs-ci-cd-demo ./nodejs-ci-cd-demo
+
 
     - name: Run container (optional)
       run: docker run -d -p 3000:3000 nodejs-ci-cd-demo
+
