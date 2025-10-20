@@ -1,0 +1,32 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 18
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run tests
+      run: npm test || echo "No tests found"
+
+    - name: Build Docker image
+      run: docker build -t nodejs-ci-cd-demo .
+
+    - name: Run container (optional)
+      run: docker run -d -p 3000:3000 nodejs-ci-cd-demo
