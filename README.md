@@ -13,7 +13,6 @@ A simple **Node.js Express app** demonstrating **CI/CD with GitHub Actions** and
 ---
 
 ## Features
-
 - Express.js app running on port 3000  
 - Dockerized for portability  
 - Automatic CI/CD with GitHub Actions
@@ -23,7 +22,6 @@ A simple **Node.js Express app** demonstrating **CI/CD with GitHub Actions** and
 ## Quick Start
 
 ### 1. Clone & Install
-
 ```bash
 git clone https://github.com/YOUR_USERNAME/devops-ci-cd-demo.git
 cd devops-ci-cd-demo/nodejs-ci-cd-demo
