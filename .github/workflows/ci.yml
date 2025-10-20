@@ -21,7 +21,7 @@ jobs:
 
     - name: Install dependencies
       run: npm install
-      working-directory: ./Devops-intern-Elavatelabs-task-1
+      working-directory: C:\Users\Afira K Mulla\OneDrive\Desktop\Devops Intern(Elevatelabs)
 
     - name: Run tests
       run: npm test || echo "No tests found"
