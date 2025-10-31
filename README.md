@@ -8,7 +8,7 @@ Task-01 (Internship from Elevate-Labs)
 
 A simple **Node.js Express app** demonstrating **CI/CD with GitHub Actions** and **Docker containerization**.
 
-![CI/CD Pipeline](https://github.com/YOUR_USERNAME/devops-ci-cd-demo/actions/workflows/ci.yml/badge.svg)
+
 
 ---
 
